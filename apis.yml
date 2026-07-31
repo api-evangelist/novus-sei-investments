@@ -1,8 +1,24 @@
 aid: novus-sei-investments
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/novus-sei-investments.png
 name: Novus (SEI Investments)
-description: 'Novus (SEI Investments) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'SEI Novus (Novus) is the portfolio intelligence and analytics platform
+  of SEI Investments, serving institutional investors — asset owners, pension funds,
+  endowments, foundations, and family offices — with manager monitoring, exposure
+  and performance analytics, risk assessment, and reporting across public and private
+  market portfolios. It is an enterprise, client-login product accessed at alpha.novus.com;
+  it exposes no public developer API, documentation, or SDK surface. Originally an
+  independent portfolio-analytics company (novus.com), it was acquired by SEI Investments.'
 url: https://raw.githubusercontent.com/api-evangelist/novus-sei-investments/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Portfolio Analytics
+- Investment Management
+- Wealth Management
+- Institutional Investors
+- Risk Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/novus-sei-investments-domain-security.yml
 - type: Website
   url: https://www.novus.com/
+- type: Login
+  url: https://alpha.novus.com/login/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
